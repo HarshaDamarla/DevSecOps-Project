@@ -4,10 +4,15 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'Stage 1: Build the application using Maven'
-        // Example: sh 'mvn clean package'
+        script {
+          def buildTime = new Date().format("yyyy-MM-dd HH:mm:ss")
+          echo "Build triggered at: ${buildTime}"
+        }
       }
     }
+  }
+}
+
 
     stage('Unit and Integration Tests') {
       steps {
