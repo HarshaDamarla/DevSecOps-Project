@@ -25,6 +25,7 @@ pipeline {
     stage('Code Analysis') {
       steps {
         echo 'Stage 3: Analyze code quality using SonarCloud'
+        echo 'code analysis is done'
         // Example: sh 'sonar-scanner'
       }
     }
