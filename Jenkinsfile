@@ -17,6 +17,7 @@ pipeline {
     stage('Unit and Integration Tests') {
       steps {
         echo 'Stage 2: Run unit and integration tests using JUnit or TestNG'
+        echo 'Regression testing is also done'
         // Example: sh 'mvn test'
       }
     }
